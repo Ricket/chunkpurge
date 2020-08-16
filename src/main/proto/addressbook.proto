@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package chunkpurge;
+
+option java_package = "org.richardcarter.chunkpurge";
+option java_outer_classname = "Protos";
+
+// initial info: world name, spawn point, chunkload tickets
+
+// events:
+// player login/logout
+// chunk load/unload - pos, cause of load
+// chunk tickets: ForceChunkEvent, UnforceChunkEvent
+
+// each tick:
+// current time millis
+// player locations (to nearest chunk) if changed
+//
